@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sat Dec 28 06:25:01 2024
+[*]
+[dumpfile] "/mnt/hgfs/Share/matrix/RVDesign/logs/wave.vcd"
+[dumpfile_mtime] "Sat Dec 28 05:31:05 2024"
+[dumpfile_size] 8023583
+[savefile] "/mnt/hgfs/Share/matrix/RVDesign/logs/test1save.gtkw"
+[timestart] 1005
+[size] 1000 600
+[pos] 65 -29
+*-4.978275 1071 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.adam_riscv.
+[treeopen] TOP.adam_riscv.u_stage_ex.
+[treeopen] TOP.adam_riscv.u_stage_ex.u_alu.
+[treeopen] TOP.adam_riscv.u_stage_id.
+[sst_width] 223
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 152
+@29
+TOP.adam_riscv.u_stage_if.u_pc.clk
+@22
+TOP.adam_riscv.u_stage_if.u_pc.pc_o[31:0]
+TOP.adam_riscv.u_stage_if.u_pc.pc_next[31:0]
+TOP.adam_riscv.u_stage_ex.br_pc[31:0]
+TOP.adam_riscv.u_stage_ex.ex_pc[31:0]
+TOP.adam_riscv.u_stage_ex.ex_regs_data1[31:0]
+TOP.adam_riscv.u_stage_id.id_regs_data1[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.r_regs_o1[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.r_regs_addr1[4:0]
+TOP.adam_riscv.u_stage_id.id_regs_data2[31:0]
+@28
+TOP.adam_riscv.u_stage_id.u_regs.w_select[1:0]
+TOP.adam_riscv.u_stage_id.u_regs.rs2_r_select
+@22
+TOP.adam_riscv.u_stage_if.inst_memory.inst_o[31:0]
+@28
+TOP.adam_riscv.u_stage_ex.br_ctrl
+@22
+TOP.adam_riscv.u_stage_ex.u_alu.alu_ctrl[3:0]
+TOP.adam_riscv.u_stage_ex.u_alu.op_A[31:0]
+TOP.adam_riscv.u_stage_ex.u_alu.op_B[31:0]
+TOP.adam_riscv.u_stage_ex.op_B_pre[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.w_regs_data[31:0]
+TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+TOP.adam_riscv.u_stage_ex.me_alu_o[31:0]
+TOP.adam_riscv.u_stage_ex.u_alu.alu_o[31:0]
+@28
+TOP.adam_riscv.u_stage_ex.br_mark
+TOP.adam_riscv.u_stage_ex.ex_br
+@22
+TOP.adam_riscv.u_stage_if.br_addr[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

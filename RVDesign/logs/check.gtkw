@@ -1,0 +1,176 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sun Dec 29 01:59:02 2024
+[*]
+[dumpfile] "/mnt/hgfs/Share/matrix/RVDesign/logs/wave.vcd"
+[dumpfile_mtime] "Sun Dec 29 01:36:54 2024"
+[dumpfile_size] 6337902
+[savefile] "/mnt/hgfs/Share/matrix/RVDesign/logs/check.gtkw"
+[timestart] 1545
+[size] 1210 1222
+[pos] -29 -29
+*-4.464532 1570 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.adam_riscv.
+[treeopen] TOP.adam_riscv.u_stage_ex.
+[treeopen] TOP.adam_riscv.u_stage_ex.u_alu.
+[treeopen] TOP.adam_riscv.u_stage_id.
+[sst_width] 223
+[signals_width] 306
+[sst_expanded] 1
+[sst_vpaned_height] 781
+@28
+TOP.adam_riscv.u_stage_if.u_pc.clk
+@22
+TOP.adam_riscv.u_stage_if.u_pc.pc_o[31:0]
+@c00022
+TOP.adam_riscv.u_stage_id.id_inst[31:0]
+@28
+(0)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(1)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(2)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(3)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(4)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(5)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(6)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(7)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(8)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(9)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(10)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(11)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(12)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(13)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(14)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(15)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(16)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(17)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(18)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(19)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(20)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(21)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(22)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(23)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(24)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(25)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(26)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(27)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(28)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(29)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(30)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+(31)TOP.adam_riscv.u_stage_id.id_inst[31:0]
+@1401200
+-group_end
+@22
+TOP.adam_riscv.u_stage_id.u_regs.matrix_file(0)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.matrix_file(1)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.matrix_file(2)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.matrix_file(3)[31:0]
+>1
+TOP.adam_riscv.u_stage_id.w_matrix_data[127:0]
+>0
+TOP.adam_riscv.u_stage_id.u_regs.r_matrix_o[127:0]
+TOP.adam_riscv.u_stage_id.u_regs.regs_file(2)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.regs_file(3)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.regs_file(5)[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.r_regs_o1[31:0]
+TOP.adam_riscv.u_stage_id.u_regs.r_regs_o2[31:0]
+TOP.adam_riscv.u_stage_ex.u_alu.op_A[31:0]
+TOP.adam_riscv.u_stage_ex.u_alu.op_B[31:0]
+TOP.adam_riscv.u_stage_ex.op_B_pre[31:0]
+@28
+TOP.adam_riscv.u_stage_ex.forwardB[1:0]
+@22
+TOP.adam_riscv.u_stage_ex.me_alu_o[31:0]
+@c00022
+TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+@28
+(0)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(1)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(2)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(3)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(4)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(5)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(6)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(7)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(8)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(9)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(10)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(11)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(12)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(13)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(14)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(15)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(16)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(17)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(18)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(19)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(20)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(21)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(22)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(23)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(24)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(25)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(26)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(27)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(28)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(29)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(30)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+(31)TOP.adam_riscv.u_stage_ex.w_regs_data[31:0]
+@1401200
+-group_end
+@22
+TOP.adam_riscv.u_stage_id.id_regs_data2[31:0]
+@c00023
+TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+@28
+(0)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(1)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(2)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(3)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(4)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(5)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(6)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(7)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(8)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(9)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(10)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(11)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(12)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(13)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(14)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(15)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(16)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(17)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(18)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(19)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(20)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(21)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(22)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(23)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(24)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(25)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(26)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(27)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(28)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(29)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(30)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+(31)TOP.adam_riscv.u_stage_ex.ex_regs_data2[31:0]
+@1401201
+-group_end
+@22
+TOP.adam_riscv.u_stage_ex.ex_regs_data2_st[31:0]
+TOP.adam_riscv.u_stage_mem.me_regs_data2[31:0]
+TOP.adam_riscv.u_stage_mem.w_data_mem[31:0]
+@28
+TOP.adam_riscv.u_stage_mem.forward_data
+@22
+TOP.adam_riscv.u_stage_mem.w_matrix_data[127:0]
+TOP.adam_riscv.u_stage_mem.me_rs2[4:0]
+TOP.adam_riscv.u_stage_mem.u_data_memory.data_test5[31:0]
+TOP.adam_riscv.u_stage_mem.u_data_memory.data_test6[31:0]
+TOP.adam_riscv.u_stage_mem.u_data_memory.data_test7[31:0]
+TOP.adam_riscv.u_stage_mem.u_data_memory.data_test8[31:0]
+TOP.adam_riscv.u_stage_mem.me_alu_o[31:0]
+TOP.adam_riscv.u_stage_ex.me_matrix_o[127:0]
+[pattern_trace] 1
+[pattern_trace] 0

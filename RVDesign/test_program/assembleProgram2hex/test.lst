@@ -1,0 +1,58 @@
+
+./test.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00000117          	auipc	sp,0x0
+   4:	00010113          	mv	sp,sp
+
+00000008 <main>:
+   8:	ffff01b7          	lui	gp,0xffff0
+   c:	dfc18193          	addi	gp,gp,-516 # fffefdfc <pass+0xfffefd4c>
+  10:	f7f6f2b7          	lui	t0,0xf7f6f
+  14:	5f428293          	addi	t0,t0,1524 # f7f6f5f4 <pass+0xf7f6f544>
+  18:	0001018b          	0x1018b
+  1c:	0002a10b          	0x2a10b
+  20:	0081008b          	0x81008b
+  24:	0001a00b          	0x1a00b
+  28:	040302b7          	lui	t0,0x4030
+  2c:	20128293          	addi	t0,t0,513 # 4030201 <pass+0x4030151>
+  30:	0052c00b          	0x52c00b
+  34:	01010113          	addi	sp,sp,16 # 10 <main+0x8>
+  38:	0001100b          	0x1100b
+  3c:	0011120b          	0x11120b
+  40:	0021140b          	0x21140b
+  44:	0031160b          	0x31160b
+  48:	030201b7          	lui	gp,0x3020
+  4c:	ffd18193          	addi	gp,gp,-3 # 301fffd <pass+0x301ff4d>
+  50:	00012283          	lw	t0,0(sp)
+  54:	04519c63          	bne	gp,t0,ac <fail>
+  58:	0000328b          	0x328b
+  5c:	04519863          	bne	gp,t0,ac <fail>
+  60:	030101b7          	lui	gp,0x3010
+  64:	dfa18193          	addi	gp,gp,-518 # 300fdfa <pass+0x300fd4a>
+  68:	00412283          	lw	t0,4(sp)
+  6c:	04519063          	bne	gp,t0,ac <fail>
+  70:	0010328b          	0x10328b
+  74:	02519c63          	bne	gp,t0,ac <fail>
+  78:	040001b7          	lui	gp,0x4000
+  7c:	bf718193          	addi	gp,gp,-1033 # 3fffbf7 <pass+0x3fffb47>
+  80:	00812283          	lw	t0,8(sp)
+  84:	02519463          	bne	gp,t0,ac <fail>
+  88:	0020328b          	0x20328b
+  8c:	02519063          	bne	gp,t0,ac <fail>
+  90:	03ff01b7          	lui	gp,0x3ff0
+  94:	9f418193          	addi	gp,gp,-1548 # 3fef9f4 <pass+0x3fef944>
+  98:	00c12283          	lw	t0,12(sp)
+  9c:	00519863          	bne	gp,t0,ac <fail>
+  a0:	0030328b          	0x30328b
+  a4:	00519463          	bne	gp,t0,ac <fail>
+  a8:	0080006f          	j	b0 <pass>
+
+000000ac <fail>:
+  ac:	00000063          	beqz	zero,ac <fail>
+
+000000b0 <pass>:
+  b0:	00000063          	beqz	zero,b0 <pass>

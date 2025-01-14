@@ -3,15 +3,15 @@
 	
 	module hazard_detection(
  000014	    input  wire      ex_mem_read,
- 046066	    input  wire[6:0] id_inst_op,
- 019741	    input  wire[2:0] id_func3_code,
- 019780	    input  wire[4:0] id_rs1,
- 013234	    input  wire[4:0] id_rs2,
+ 039497	    input  wire[6:0] id_inst_op,
+ 019743	    input  wire[2:0] id_func3_code,
+ 019782	    input  wire[4:0] id_rs1,
+ 026365	    input  wire[4:0] id_rs2,
  019770	    input  wire[2:0] ex_alu_op,
- 000085	    input  wire[4:0] ex_rd,
- 006569	    input  wire      br_ctrl,
-%000009	    output wire      load_stall,
- 006569	    output wire      flush
+ 000082	    input  wire[4:0] ex_rd,
+ 006570	    input  wire      br_ctrl,
+%000008	    output wire      load_stall,
+ 006570	    output wire      flush
 	);
 	assign load_stall = ex_mem_read ? 
 	                        (id_inst_op != `Mtype && ex_alu_op != 3'b101) ? 

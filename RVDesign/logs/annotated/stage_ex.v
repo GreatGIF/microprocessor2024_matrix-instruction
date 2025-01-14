@@ -2,49 +2,48 @@
 	`include "./AdamRiscv/define.vh"
 	
 	module stage_ex(
- 019812	    input  wire[31:0]  ex_pc,  //pc_now
- 000098	    input  wire[4:0]   ex_rs2,
- 000730	    input  wire[31:0]  ex_regs_data1,
- 000558	    input  wire[31:0]  ex_regs_data2,
- 506056	    input  wire[127:0] ex_matrix_data,
- 000391	    input  wire[31:0]  ex_imm,
- 000040	    input  wire[2:0]   ex_func3_code, 
-%000008	    input  wire        ex_func7_code,
+ 019819	    input  wire[31:0]  ex_pc,  //pc_now
+ 000099	    input  wire[4:0]   ex_rs2,
+ 000715	    input  wire[31:0]  ex_regs_data1,
+ 000546	    input  wire[31:0]  ex_regs_data2,
+ 506045	    input  wire[127:0] ex_matrix_data,
+ 000390	    input  wire[31:0]  ex_imm,
+ 000041	    input  wire[2:0]   ex_func3_code, 
+%000007	    input  wire        ex_func7_code,
  019770	    input  wire[2:0]   ex_alu_op,
- 000021	    input  wire[1:0]   ex_alu_src1,
- 000016	    input  wire[1:0]   ex_alu_src2,
- 006578	    input  wire        ex_br_addr_mode,
- 006583	    input  wire        ex_br,
+ 000020	    input  wire[1:0]   ex_alu_src1,
+ 000017	    input  wire[1:0]   ex_alu_src2,
+ 006577	    input  wire        ex_br_addr_mode,
+ 006584	    input  wire        ex_br,
 %000002	    input  wire        ex_mem_write,
 	    //forwarding
  000032	    input  wire[1:0]   forwardA,
- 000021	    input  wire[1:0]   forwardB,
-%000008	    input  wire[1:0]   forwardM,
- 000679	    input  wire[31:0]  me_alu_o,
- 000491	    input  wire[31:0]  w_regs_data,
-%000260	    input  wire[127:0] w_matrix_data,
-%000267	    input  wire[127:0] me_matrix_o,
- 000027	    input  wire[1:0]   me_w_select,
+ 000022	    input  wire[1:0]   forwardB,
+%000009	    input  wire[1:0]   forwardM,
+ 000673	    input  wire[31:0]  me_alu_o,
+ 000492	    input  wire[31:0]  w_regs_data,
+%000287	    input  wire[127:0] w_matrix_data,
+%000299	    input  wire[127:0] me_matrix_o,
+ 000029	    input  wire[1:0]   me_w_select,
  000029	    input  wire[1:0]   wb_w_select,
- 000081	    input  wire[4:0]   me_rd,
- 000083	    input  wire[4:0]   wb_rd,
+ 000084	    input  wire[4:0]   me_rd,
+ 000082	    input  wire[4:0]   wb_rd,
 	
- 000553	    output wire[31:0]  ex_regs_data2_st,
- 000661	    output wire[31:0]  ex_alu_o,
-%000124	    output wire[127:0] ex_matrix_o,
- 020102	    output wire[31:0]  br_pc, //branch address
- 006569	    output wire        br_ctrl
+ 000536	    output wire[31:0]  ex_regs_data2_st,
+ 000660	    output wire[31:0]  ex_alu_o,
+%000224	    output wire[127:0] ex_matrix_o,
+ 020103	    output wire[31:0]  br_pc, //branch address
+ 006570	    output wire        br_ctrl
 	);
 	
  026326	wire [3:0]  alu_ctrl;
- 000544	wire [31:0] op_A;
- 000603	wire [31:0] op_A_pre;
- 000518	wire [31:0] op_B;
- 000547	wire [31:0] op_B_pre;
- 506216	wire [127:0]op_M;
-%000074	wire [127:0]op_M_pre;
-%000004	wire        br_mark;
- 019869	wire [31:0] br_addr_op_A; 
+ 000542	wire [31:0] op_A;
+ 000619	wire [31:0] op_A_pre;
+ 000515	wire [31:0] op_B;
+ 000533	wire [31:0] op_B_pre;
+ 506255	wire [127:0]op_M;
+%000006	wire        br_mark;
+ 019872	wire [31:0] br_addr_op_A; 
 	
 	alu_control u_alu_control(
 	    .alu_op     (ex_alu_op     ),

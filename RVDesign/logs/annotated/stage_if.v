@@ -1,12 +1,12 @@
 	// verilator_coverage annotation
 	module stage_if(
  020000	    input  wire          clk,
-%000002	    input  wire          rst,
-%000009	    input  wire          pc_stall,
- 020102	    input  wire[31:0]    br_addr,
- 006569	    input  wire          br_ctrl,
- 177799	    output wire[31:0]    if_inst,
- 013249	    output wire[31:0]    if_pc
+%000001	    input  wire          rst,
+%000008	    input  wire          pc_stall,
+ 020103	    input  wire[31:0]    br_addr,
+ 006570	    input  wire          br_ctrl,
+ 171236	    output wire[31:0]    if_inst,
+ 013244	    output wire[31:0]    if_pc
 	);
 	
 	pc u_pc(

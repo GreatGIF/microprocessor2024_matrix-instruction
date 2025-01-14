@@ -24,7 +24,7 @@ class Vadam_riscv__Syms : public VerilatedSyms {
     Vadam_riscv*                   TOPp;
     
     // COVERAGE
-    uint32_t __Vcoverage[2252];
+    uint32_t __Vcoverage[2123];
     
     // CREATORS
     Vadam_riscv__Syms(Vadam_riscv* topp, const char* namep);

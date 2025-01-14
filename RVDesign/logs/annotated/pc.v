@@ -1,15 +1,15 @@
 	// verilator_coverage annotation
 	module pc(
  020000	    input  wire         clk,
- 006569	    input  wire         br_ctrl, //br
- 020102	    input  wire[31:0]   br_addr,
-%000002	    input  wire         rst,
- 013249	    output reg[31:0]    pc_o,
+ 006570	    input  wire         br_ctrl, //br
+ 020103	    input  wire[31:0]   br_addr,
+%000001	    input  wire         rst,
+ 013244	    output reg[31:0]    pc_o,
 	    //hazard detection
-%000009	    input  wire         pc_stall
+%000008	    input  wire         pc_stall
 	    );
 	
- 013258	reg [31:0] pc_next;
+ 013253	reg [31:0] pc_next;
 	
 	always @(posedge clk) begin
  000100	    if (!rst)begin

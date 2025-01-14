@@ -1,29 +1,29 @@
 	// verilator_coverage annotation
 	module regs(
  020000	    input wire clk,
-%000002	    input wire rst,
+%000001	    input wire rst,
 	
  000011	    input wire          rs2_r_select,       // 1: read reg; 0: read matrix
- 019780	    input wire[4:0]     r_regs_addr1,
- 013234	    input wire[4:0]     r_regs_addr2,
- 000083	    input wire[4:0]     w_regs_addr,
- 000491	    input wire[31:0]    w_regs_data,
+ 019782	    input wire[4:0]     r_regs_addr1,
+ 026365	    input wire[4:0]     r_regs_addr2,
+ 000082	    input wire[4:0]     w_regs_addr,
+ 000492	    input wire[31:0]    w_regs_data,
  000029	    input wire[1:0]     w_select,       // 00: write disable; 01: write reg; 10: write one matrix slice; 11: write whole matrix
-%000260	    input wire[127:0]   w_matrix_data,
+%000287	    input wire[127:0]   w_matrix_data,
 	
- 079535	    output wire[31:0]   r_regs_o1,
- 085926	    output wire[31:0]   r_regs_o2,
-%000241	    output wire[127:0]  r_matrix_o
+ 105789	    output wire[31:0]   r_regs_o1,
+ 112174	    output wire[31:0]   r_regs_o2,
+%000240	    output wire[127:0]  r_matrix_o
 	);
 	
 	reg [31:0] regs_file [31:0]; //  32 32-bit registers
 	
-%000237	reg [31:0] matrix_file [3:0];
+%000248	reg [31:0] matrix_file [3:0];
 	
  000012	wire wb_hazard_a;
 %000002	wire wb_hazard_b;
-%000005	wire wb_hazard_m;
-%000274	wire [31:0] w_matrix[3:0];
+%000004	wire wb_hazard_m;
+%000292	wire [31:0] w_matrix[3:0];
 	
 	assign w_matrix[0] = w_matrix_data[31:0];
 	assign w_matrix[1] = w_matrix_data[63:32];

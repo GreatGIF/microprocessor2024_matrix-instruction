@@ -3,28 +3,28 @@
 	
 	
 	module forwarding(
- 000075	    input wire[4:0]   ex_rs1,
- 000098	    input wire[4:0]   ex_rs2,
- 000081	    input wire[4:0]   me_rd,
- 000083	    input wire[4:0]   wb_rd,
+ 000077	    input wire[4:0]   ex_rs1,
+ 000099	    input wire[4:0]   ex_rs2,
+ 000084	    input wire[4:0]   me_rd,
+ 000082	    input wire[4:0]   wb_rd,
  000095	    input wire[4:0]   me_rs2,
 %000004	    input wire        me_mem_write,
- 000027	    input wire[1:0]   me_w_select,
+ 000029	    input wire[1:0]   me_w_select,
  000029	    input wire[1:0]   wb_w_select,
- 006587	    input wire        ex_rs2_r_select,
- 006589	    input wire        me_rs2_r_select,
+ 006588	    input wire        ex_rs2_r_select,
+ 006588	    input wire        me_rs2_r_select,
 	    //forwarding for alu_operatant
  000032	    output wire[1:0]  forwardA,
- 000021	    output wire[1:0]  forwardB,
-%000008	    output wire[1:0]  forwardM,
+ 000022	    output wire[1:0]  forwardB,
+%000009	    output wire[1:0]  forwardM,
 	    //forwarding for data_memory write_data
- 000010	    output wire       forward_data
+ 000011	    output wire       forward_data
 	);
 	
 	// alu_operatant forwarding
  000019	wire ex_hazard_a;
  000010	wire ex_hazard_b;
-%000004	wire ex_hazard_m;
+%000005	wire ex_hazard_m;
  000015	wire mem_hazard_a;
  000013	wire mem_hazard_b;
 %000005	wire mem_hazard_m;

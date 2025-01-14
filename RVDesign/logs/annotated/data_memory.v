@@ -3,13 +3,13 @@
 	    parameter DROM_SPACE = 1024
 	)(
  020000	    input  wire         clk,
-%000002	    input  wire         rst,
- 006589	    input  wire         mst_or_mvtr,
- 000679	    input  wire[31:0]   data_addr,
- 000550	    input  wire[31:0]   w_data_mem,
- 000012	    input  wire         r_en_mem,
+%000001	    input  wire         rst,
+ 006588	    input  wire         mst_or_mvtr,
+ 000673	    input  wire[31:0]   data_addr,
+ 000536	    input  wire[31:0]   w_data_mem,
+ 000013	    input  wire         r_en_mem,
 %000004	    input  wire         w_en_mem,
- 000037	    input  wire[1:0]    byte_sel,
+ 000038	    input  wire[1:0]    byte_sel,
  000256	    output wire[31:0]   r_data_mem
 	);
 	

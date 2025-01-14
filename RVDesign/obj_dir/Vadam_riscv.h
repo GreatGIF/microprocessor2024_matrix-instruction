@@ -67,7 +67,6 @@ VL_MODULE(Vadam_riscv) {
     VL_SIG8(adam_riscv__DOT__me_w_select,1,0);
     VL_SIG8(adam_riscv__DOT__me_rs2_r_select,0,0);
     VL_SIG8(adam_riscv__DOT__me_func3_code,2,0);
-    VL_SIG8(adam_riscv__DOT__wb_rs2_r_select,0,0);
     VL_SIG8(adam_riscv__DOT__wb_mem2reg,0,0);
     VL_SIG8(adam_riscv__DOT__u_stage_id__DOT__br,0,0);
     VL_SIG8(adam_riscv__DOT__u_stage_id__DOT__mem_read,0,0);
@@ -120,7 +119,6 @@ VL_MODULE(Vadam_riscv) {
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT__op_B,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT__op_B_pre,31,0);
     VL_SIGW(adam_riscv__DOT__u_stage_ex__DOT__op_M,127,0,4);
-    VL_SIGW(adam_riscv__DOT__u_stage_ex__DOT__op_M_pre,127,0,4);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT__br_addr_op_A,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT__u_alu__DOT__unnamedblk1__DOT__i,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT__u_alu__DOT__unnamedblk1__DOT__j,31,0);
@@ -178,7 +176,6 @@ VL_MODULE(Vadam_riscv) {
     VL_SIG8(adam_riscv__DOT____Vtogcov__me_rs2_r_select,0,0);
     VL_SIG8(adam_riscv__DOT____Vtogcov__me_func3_code,2,0);
     VL_SIG8(adam_riscv__DOT____Vtogcov__forward_data,0,0);
-    VL_SIG8(adam_riscv__DOT____Vtogcov__wb_rs2_r_select,0,0);
     VL_SIG8(adam_riscv__DOT____Vtogcov__wb_mem2reg,0,0);
     VL_SIG8(adam_riscv__DOT__u_stage_id__DOT____Vtogcov__br,0,0);
     VL_SIG8(adam_riscv__DOT__u_stage_id__DOT____Vtogcov__mem_read,0,0);
@@ -234,7 +231,6 @@ VL_MODULE(Vadam_riscv) {
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT____Vtogcov__op_B,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT____Vtogcov__op_B_pre,31,0);
     VL_SIGW(adam_riscv__DOT__u_stage_ex__DOT____Vtogcov__op_M,127,0,4);
-    VL_SIGW(adam_riscv__DOT__u_stage_ex__DOT____Vtogcov__op_M_pre,127,0,4);
     VL_SIG(adam_riscv__DOT__u_stage_ex__DOT____Vtogcov__br_addr_op_A,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_mem__DOT____Vtogcov__w_data_mem,31,0);
     VL_SIG(adam_riscv__DOT__u_stage_mem__DOT____Vtogcov__r_data_mem,31,0);
@@ -282,7 +278,7 @@ VL_MODULE(Vadam_riscv) {
   private:
     static QData _change_request(Vadam_riscv__Syms* __restrict vlSymsp);
   public:
-    static void _combo__TOP__3(Vadam_riscv__Syms* __restrict vlSymsp);
+    static void _combo__TOP__2(Vadam_riscv__Syms* __restrict vlSymsp);
   private:
     void _configure_coverage(Vadam_riscv__Syms* __restrict vlSymsp, bool first);
     void _ctor_var_reset();
@@ -295,10 +291,9 @@ VL_MODULE(Vadam_riscv) {
   public:
     static void _eval_initial(Vadam_riscv__Syms* __restrict vlSymsp);
     static void _eval_settle(Vadam_riscv__Syms* __restrict vlSymsp);
-    static void _initial__TOP__2(Vadam_riscv__Syms* __restrict vlSymsp);
+    static void _initial__TOP__1(Vadam_riscv__Syms* __restrict vlSymsp);
     static void _sequent__TOP__4(Vadam_riscv__Syms* __restrict vlSymsp);
-    static void _settle__TOP__1(Vadam_riscv__Syms* __restrict vlSymsp);
-    static void _settle__TOP__5(Vadam_riscv__Syms* __restrict vlSymsp);
+    static void _settle__TOP__3(Vadam_riscv__Syms* __restrict vlSymsp);
     static void traceChgThis(Vadam_riscv__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void traceChgThis__2(Vadam_riscv__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);
     static void traceChgThis__3(Vadam_riscv__Syms* __restrict vlSymsp, VerilatedVcd* vcdp, uint32_t code);

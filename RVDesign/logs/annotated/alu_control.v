@@ -3,8 +3,8 @@
 	
 	module alu_control(
  019770	    input wire[2:0] alu_op,
- 000040	    input wire[2:0] func3_code, 
-%000008	    input wire      func7_code,  //func7_code = func7[5] = [inst[30]]
+ 000041	    input wire[2:0] func3_code, 
+%000007	    input wire      func7_code,  //func7_code = func7[5] = [inst[30]]
  026326	    output reg[3:0] alu_ctrl_r
 	);
 	

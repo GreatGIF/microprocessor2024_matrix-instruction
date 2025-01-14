@@ -3,26 +3,26 @@
 	
 	module stage_mem(
  020000	    input  wire        clk,
-%000002	    input  wire        rst,
+%000001	    input  wire        rst,
  000095	    input  wire[4:0]   me_rs2,
 	
- 000027	    input  wire[1:0]   me_w_select,
+ 000029	    input  wire[1:0]   me_w_select,
  000029	    input  wire[1:0]   wb_w_select,
- 006589	    input  wire        me_rs2_r_select,
- 000549	    input  wire[31:0]  me_regs_data2,
- 000679	    input  wire[31:0]  me_alu_o,
- 000012	    input  wire        me_mem_read,
+ 006588	    input  wire        me_rs2_r_select,
+ 000540	    input  wire[31:0]  me_regs_data2,
+ 000673	    input  wire[31:0]  me_alu_o,
+ 000013	    input  wire        me_mem_read,
 %000004	    input  wire        me_mem_write,
- 000043	    input  wire[2:0]   me_func3_code,
+ 000044	    input  wire[2:0]   me_func3_code,
 	    //forwarding
- 000010	    input wire         forward_data,
- 000491	    input wire[31:0]   w_regs_data,
-%000260	    input wire[127:0]  w_matrix_data,
+ 000011	    input wire         forward_data,
+ 000492	    input wire[31:0]   w_regs_data,
+%000287	    input wire[127:0]  w_matrix_data,
 	
- 000255	    output wire[31:0]  me_mem_data
+ 000257	    output wire[31:0]  me_mem_data
 	);
 	
- 000550	wire[31:0]  w_data_mem;
+ 000536	wire[31:0]  w_data_mem;
  000256	wire[31:0]  r_data_mem;
 	
 	data_memory 

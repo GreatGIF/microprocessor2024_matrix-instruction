@@ -2,17 +2,17 @@
 	`include "./AdamRiscv/define.vh"
 	
 	module ctrl(   
- 046066	    input  wire[6:0]    inst_op,
- 019741	    input  wire[2:0]    inst_func3_code,
- 006585	    output wire         br,
+ 039497	    input  wire[6:0]    inst_op,
+ 019743	    input  wire[2:0]    inst_func3_code,
+ 006584	    output wire         br,
  000012	    output wire         mem_read,
- 000012	    output wire         mem2reg,
- 013200	    output wire[2:0]    alu_op,
-%000003	    output wire         mem_write,
- 000018	    output wire[1:0]    alu_src1,
- 000016	    output wire[1:0]    alu_src2,
+ 000013	    output wire         mem2reg,
+ 013202	    output wire[2:0]    alu_op,
+%000002	    output wire         mem_write,
+ 000020	    output wire[1:0]    alu_src1,
+ 000017	    output wire[1:0]    alu_src2,
 %000001	    output wire         br_addr_mode,
- 000026	    output wire[1:0]    w_select_o,
+ 000027	    output wire[1:0]    w_select_o,
  000011	    output wire         rs2_r_select
 	);
 	

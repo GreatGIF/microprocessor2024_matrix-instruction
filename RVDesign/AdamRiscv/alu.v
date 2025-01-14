@@ -14,7 +14,7 @@ assign br_mark = (alu_ctrl == `JUMP)? 1 :
                  (alu_ctrl == `NOTEQ || alu_ctrl == `SLT || alu_ctrl == `SLTU)?
                  (alu_o != 0) : (alu_o == 0);
  
-always @(alu_ctrl, op_A, op_B) begin
+always @(*) begin
     alu_o = 0;             // 默认值
     matrix_o = 0;          // 默认值
     case (alu_ctrl)

@@ -1,14 +1,14 @@
 	// verilator_coverage annotation
 	module reg_if_id(
  020000	    input wire clk,
-%000002	    input wire rst,
- 013249	    input wire[31:0] if_pc,
- 177799	    input wire[31:0] if_inst,
- 144964	    output reg[31:0] id_inst,
- 026389	    output reg[31:0] id_pc,
+%000001	    input wire rst,
+ 013244	    input wire[31:0] if_pc,
+ 171236	    input wire[31:0] if_inst,
+ 151526	    output reg[31:0] id_inst,
+ 026390	    output reg[31:0] id_pc,
 	    //hazard detection
- 006569	    input  wire if_id_flush,
-%000009	    input  wire if_id_stall
+ 006570	    input  wire if_id_flush,
+%000008	    input  wire if_id_stall
 	);
 	
 	always @(posedge clk) begin

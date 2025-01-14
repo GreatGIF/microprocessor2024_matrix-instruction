@@ -6,88 +6,87 @@
 	
 	module adam_riscv(
  020000	    input wire clk,
-%000002	    input wire rst
+%000001	    input wire rst
 	);
 	
- 006569	wire          br_ctrl;
- 020102	wire[31:0]    br_addr;
-%000009	wire          stall;
- 013249	wire[31:0]    if_pc;
- 177799	wire[31:0]    if_inst;
- 006569	wire          flush;
- 144964	wire[31:0]    id_inst;
- 026389	wire[31:0]    id_pc;
+ 006570	wire          br_ctrl;
+ 020103	wire[31:0]    br_addr;
+%000008	wire          stall;
+ 013244	wire[31:0]    if_pc;
+ 171236	wire[31:0]    if_inst;
+ 006570	wire          flush;
+ 151526	wire[31:0]    id_inst;
+ 026390	wire[31:0]    id_pc;
 	
  000029	wire[1:0]     w_select;
- 000083	wire[4:0]     w_regs_addr;
- 000491	wire[31:0]    w_regs_data;
-%000260	wire[127:0]   w_matrix_data;
- 079535	wire[31:0]    id_regs_data1;
- 085926	wire[31:0]    id_regs_data2;
-%000241	wire[127:0]   id_matrix_data;
- 000373	wire[31:0]    id_imm;
- 019741	wire[2:0]     id_func3_code; 
-%000006	wire          id_func7_code;
- 026352	wire[4:0]     id_rd;
- 006585	wire          id_br;
+ 000082	wire[4:0]     w_regs_addr;
+ 000492	wire[31:0]    w_regs_data;
+%000287	wire[127:0]   w_matrix_data;
+ 105789	wire[31:0]    id_regs_data1;
+ 112174	wire[31:0]    id_regs_data2;
+%000240	wire[127:0]   id_matrix_data;
+ 000378	wire[31:0]    id_imm;
+ 019743	wire[2:0]     id_func3_code; 
+ 006574	wire          id_func7_code;
+ 013216	wire[4:0]     id_rd;
+ 006584	wire          id_br;
  000013	wire          id_mem_read;
  000013	wire          id_mem2reg;
- 013201	wire[2:0]     id_alu_op;
-%000002	wire          id_mem_write;
+ 013202	wire[2:0]     id_alu_op;
+%000003	wire          id_mem_write;
  000018	wire[1:0]     id_alu_src1;
  000016	wire[1:0]     id_alu_src2;
 %000009	wire          id_br_addr_mode;
- 000027	wire[1:0]     id_w_select;
- 000018	wire          id_rs2_r_select;
- 019780	wire[4:0]     id_rs1;
- 013234	wire[4:0]     id_rs2;
- 000075	wire[4:0]     ex_rs1;
- 000098	wire[4:0]     ex_rs2;
- 019812	wire[31:0]    ex_pc;
- 000730	wire[31:0]    ex_regs_data1;
- 000558	wire[31:0]    ex_regs_data2;
- 000553	wire[31:0]    ex_regs_data2_st;
- 506056	wire[127:0]   ex_matrix_data;
- 000391	wire[31:0]    ex_imm;
- 000040	wire[2:0]     ex_func3_code; 
-%000008	wire          ex_func7_code;
- 000085	wire[4:0]     ex_rd;
- 006583	wire          ex_br;
+ 000026	wire[1:0]     id_w_select;
+ 000019	wire          id_rs2_r_select;
+ 019782	wire[4:0]     id_rs1;
+ 026365	wire[4:0]     id_rs2;
+ 000077	wire[4:0]     ex_rs1;
+ 000099	wire[4:0]     ex_rs2;
+ 019819	wire[31:0]    ex_pc;
+ 000715	wire[31:0]    ex_regs_data1;
+ 000546	wire[31:0]    ex_regs_data2;
+ 000536	wire[31:0]    ex_regs_data2_st;
+ 506045	wire[127:0]   ex_matrix_data;
+ 000390	wire[31:0]    ex_imm;
+ 000041	wire[2:0]     ex_func3_code; 
+%000007	wire          ex_func7_code;
+ 000082	wire[4:0]     ex_rd;
+ 006584	wire          ex_br;
  000014	wire          ex_mem_read;
  000012	wire          ex_mem2reg;
  019770	wire[2:0]     ex_alu_op;
 %000002	wire          ex_mem_write;
- 000021	wire[1:0]     ex_alu_src1;
- 000016	wire[1:0]     ex_alu_src2;
- 006578	wire          ex_br_addr_mode;
+ 000020	wire[1:0]     ex_alu_src1;
+ 000017	wire[1:0]     ex_alu_src2;
+ 006577	wire          ex_br_addr_mode;
  000027	wire[1:0]     ex_w_select;
- 006587	wire          ex_rs2_r_select;
- 000661	wire[31:0]    ex_alu_o;
-%000124	wire[127:0]   ex_matrix_o;
+ 006588	wire          ex_rs2_r_select;
+ 000660	wire[31:0]    ex_alu_o;
+%000224	wire[127:0]   ex_matrix_o;
 	
  000032	wire[1:0]     forwardA;
- 000021	wire[1:0]     forwardB;
-%000008	wire[1:0]     forwardM;
+ 000022	wire[1:0]     forwardB;
+%000009	wire[1:0]     forwardM;
 	
  000095	wire [4:0]    me_rs2;
- 000549	wire [31:0]   me_regs_data2;
- 000679	wire [31:0]   me_alu_o;
-%000267	wire [127:0]  me_matrix_o;
- 000081	wire [4:0]    me_rd;
- 000012	wire          me_mem_read;
+ 000540	wire [31:0]   me_regs_data2;
+ 000673	wire [31:0]   me_alu_o;
+%000299	wire [127:0]  me_matrix_o;
+ 000084	wire [4:0]    me_rd;
+ 000013	wire          me_mem_read;
  000014	wire          me_mem2reg;
 %000004	wire          me_mem_write;
- 000027	wire[1:0]     me_w_select;
- 006589	wire          me_rs2_r_select;
- 000255	wire[31:0]    me_mem_data;
- 000043	wire[2:0]     me_func3_code;  
+ 000029	wire[1:0]     me_w_select;
+ 006588	wire          me_rs2_r_select;
+ 000257	wire[31:0]    me_mem_data;
+ 000044	wire[2:0]     me_func3_code;  
 	
- 000010	wire          forward_data;
+ 000011	wire          forward_data;
 	
- 000274	wire[31:0]    wb_mem_data;
- 000675	wire[31:0]    wb_alu_o;
- 006587	wire          wb_rs2_r_select;
-%000260	wire[127:0]   wb_matrix_o;
+ 000275	wire[31:0]    wb_mem_data;
+ 000674	wire[31:0]    wb_alu_o;
+%000287	wire[127:0]   wb_matrix_o;
  000012	wire          wb_mem2reg;
 	
 	stage_if u_stage_if(
@@ -280,14 +279,12 @@
 	    .me_rd         (me_rd         ),
 	    .me_mem2reg    (me_mem2reg    ),
 	    .me_w_select   (me_w_select   ),
-	    .me_rs2_r_select(me_rs2_r_select),
 	    .wb_mem_data   (wb_mem_data   ),
 	    .wb_alu_o      (wb_alu_o      ),
 	    .wb_matrix_o   (wb_matrix_o   ),
 	    .wb_rd         (w_regs_addr   ),
 	    .wb_mem2reg    (wb_mem2reg    ),
-	    .wb_w_select   (w_select      ),
-	    .wb_rs2_r_select(wb_rs2_r_select)
+	    .wb_w_select   (w_select      )
 	);
 	
 	
